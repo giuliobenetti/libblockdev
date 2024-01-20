@@ -28,6 +28,7 @@
 #include "module.h"
 #include "exec.h"
 #include "logging.h"
+#include "utils.h"
 
 
 /**
