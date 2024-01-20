@@ -9,6 +9,10 @@
 #include "dbus.h"
 #include "logging.h"
 
+#if !defined(HAVE_STRERROR_L)
+#define strerror_l(errnum, locale)      strerror(errnum)
+#endif
+
 /**
  * SECTION: utils
  * @short_description: library providing utility functions used by the blockdev library and its plugins
